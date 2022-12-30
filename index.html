@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>console</title>
+</head>
+<body>
+    <script>
+        console.log('hello word');
+        console.info('Информационное сообщение');
+        console.warn('Предупреждение о чём-либо');
+        console.error('Какая-то ошибка');
+        console.group('Группа 1');
+
+            console.group('Группа 2');
+                console.log('hello word');
+                console.info('Информационное сообщение');
+                console.warn('Предупреждение о чём-либо');
+                console.error('Какая-то ошибка');
+            console.groupEnd();
+
+            console.group('Группа 3');
+                console.log('Сообщение 1');
+                console.log('Сообщение 2');
+                console.log('Сообщение 3');
+            console.groupEnd();
+
+        console.groupEnd();
+    </script>
+</body>
+</html>
